@@ -5,4 +5,4 @@ app.use('/', (req, res) => {
     res.send('Welcome to my website!');
 });
 
-app.listen(process.env.PORT)
+app.listen(process.env.NODE_ENV)
