@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'BreviaWebApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2D35E0E142A142FAB1F6114DED16A82C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FAB4371BE79C45CFA482EED8D960C2FA }}
           package: .
