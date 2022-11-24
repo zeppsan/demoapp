@@ -10,7 +10,13 @@ insights.setup(connectionString)
         .start();
 
 app.use('/apicall', (req, res) => {
-    res.send("asd");
+    axios.get('https://api.placeholderjson.dev/shipments')
+    .then((result) => {
+        return result;
+    })
+    .catch((err) => {
+        return "err";
+    })
 });
 
 app.use('/', (req, res) => {
