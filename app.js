@@ -12,7 +12,7 @@ insights.setup(connectionString)
 app.use('/apicall', (req, res) => {
     axios.get('https://api.placeholderjson.dev/shipments')
     .then((result) => {
-        return result;
+        return res.send(result);
     })
     .catch((err) => {
         return "err";
